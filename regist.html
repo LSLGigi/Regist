@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regist</title>
+    <script src="regist.js"></script>
+    <link rel="stylesheet" href="regist.css">
+</head>
+<body>
+<table id="wrapper">
+    <tr>
+        <td class="td1">注册手机号</td>
+        <td class="td2">
+            <input type="text" name="phone" class="inputtext" onfocus="phoneOnfocus()" onblur="phoneOnblur()"/>
+        </td>
+        <td><div class="checkmsg" id="phonemsg">长度为11位</div></td>
+    </tr>
+    <tr>
+        <td class="td1">密码</td>
+        <td class="td2">
+            <input type="password" name="password" class="inputtext" onfocus="pwOnfocus()" onblur="pwOnblur()"/>
+        </td>
+        <td><div class="checkmsg" id="pwmsg">长度不小于8位</div></td>
+    </tr>
+    <tr>
+        <td class="td1">重复密码</td>
+        <td class="td2">
+            <input type="password" name="repeat" class="inputtext" onfocus="reOnfocus()" onblur="reOnblur()"/>
+        </td>
+        <td><div class="checkmsg" id="repeatmsg">密码一致</div></td>
+    </tr>
+    <tr>
+        <td class="td1">用户名称</td>
+        <td class="td2">
+            <input type="text" name="user" class="inputtext" onfocus="userOnfocus()" onblur="userOnblur()"/>
+        </td>
+        <td><div class="checkmsg" id="usermsg">长度小于或等于10位</div></td>
+    </tr>
+    <tr>
+        <td class="td1">性别</td>
+        <td class="td2">
+            <select class="sex">
+                <option>男</option>
+                <option>女</option>
+            </select>
+        </td>
+        <td><div class="checkmsg" id="sexmsg"></div></td>
+    </tr>
+    <tr>
+        <td class="td1">兴趣爱好</td>
+        <td class="td2">
+            <input type="checkbox" name="love1" value="love1" class="checkbox" />新闻
+            <input type="checkbox" name="love2" value="love2" class="checkbox" />社会
+            <input type="checkbox" name="love3" value="love3" class="checkbox" />娱乐
+            <input type="checkbox" name="love4" value="love4" class="checkbox" />电影
+            <input type="checkbox" name="love5" value="love5" class="checkbox" />科技
+        </td>
+        <td><div class="checkmsg" id="lovemsg"></div></td>
+    </tr>
+    <tr>
+        <td class="td1">签名</td>
+        <td class="td2">
+            <textarea name="txt" cols="30" rows="5" onfocus="txtOnfocus()" onblur="txtOnblur()"></textarea>
+        </td>
+        <td><div class="checkmsg" id="txtmsg">长度不超过100位</div></td>
+    </tr>
+    <tr>
+        <td colspan="3">
+            <input type="button" class="registbtn" value="注册" onclick="registCheck()"/>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

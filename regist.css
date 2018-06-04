@@ -1,0 +1,60 @@
+body {
+    background:#99cccc url(bg2.jpg) no-repeat left top;
+}
+#wrapper {
+    width:800px;
+    position:relative;
+    left:50%;
+    margin-left:-400px;
+}
+.td1 {
+    font-size:20px;
+    padding:20px;
+    padding-bottom: 0px;
+}
+
+.td2 {
+    padding:20px;
+    width:400px;
+    padding-bottom: 0px;
+}
+.inputtext,select.sex{
+    font-size:20px;
+    border:1px solid #99cccc;
+    border-radius:5px;
+    padding:10px;
+    width:200px;
+}
+
+.checkbox {
+    font-size:20px;
+    border:1px solid #99cccc;
+    border-radius:5px;
+    padding:10px;
+}
+
+textarea {
+    font-size:20px;
+    width:200px;
+    padding:10px;
+    border-radius:5px;
+    border:1px solid #99cccc;
+}
+
+.checkmsg {
+    color:red;
+    font-size:16px;
+    padding:20px;
+}
+.registbtn {
+    font-size:24px;
+    color:white;
+    background-color:#ff9933;
+    border-radius:5px;
+    padding:10px;
+    margin-left:10px;
+    width:200px;
+    text-align:center;
+    border:0px;
+    margin-top:20px;
+}
